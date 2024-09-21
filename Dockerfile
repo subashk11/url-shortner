@@ -18,7 +18,7 @@ FROM openjdk:17.0.1-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file from the previous stage
-COPY --from=build /app/target/app-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/url-shortner-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port the application will run on
 EXPOSE 8080
